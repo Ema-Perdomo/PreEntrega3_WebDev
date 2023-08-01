@@ -5,24 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="./assets/img/PandaLOGO.png" type="image/x-icon">
+    <!-- ----------------Link Boostrap--------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ----------------Link Css--------------------- -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">NOSOTROS</a></li>
-                <li><a href="./pages/historial.html">HISTORIAL</a></li>
-                <li><a href="./pages/actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./pages/publicaciones.html">PUBLICACIONES</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                <!-- Logo panda clikeable --> 
-                <li><a href="./index.html"><img class="logoHeader" src="./assets/img/PandaLOGO.png" ></a></li>
-            </ul>            
-        </nav>
-    </header>
+    <header class="container-fluid">        
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <!-- Logo panda clikeable --> 
+                    <a href="./index.html"><img class="logoHeader" src="./assets/img/PandaLOGO.png" ></a>
+                </div>
+                <div class="col-4">                    
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        MENU
+                        </button>
+                        <nav>
+                            <ul class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                                <li><a href="./index.html">NOSOTROS</a></li>
+                                <li><a href="./pages/historial.html">HISTORIAL</a></li>
+                                <li><a href="./pages/actividades.html">ACTIVIDADES</a></li>
+                                <li><a href="./pages/publicaciones.html">PUBLICACIONES</a></li>
+                                <li><a href="./pages/contacto.html">CONTACTO</a></li>   
+                            </ul> 
+                        </nav>                            
+                    </div>           
+                </div>
+            </div>
+        </header>
 
     <main>            
         <div class="presentacion">
@@ -101,5 +116,6 @@
             <li><a  href="https://www.youtube.com/channel/UCssoTadMCPhlXLPMpJVi53Q"><img src="./assets/img/logoYTpng.png" class="logo"></a> </li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
