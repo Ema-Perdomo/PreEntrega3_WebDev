@@ -1,5 +1,5 @@
 /*Variables*/
-@import "variables";
+// @import "variables";
 $color_1: black;
 $color_2: rgba(255, 255, 255, 0.808);
 $color_3: rgb(202, 201, 201);
@@ -8,18 +8,18 @@ $background-color_1: rgb(150, 175, 112);
 $background-color_2: rgba(0, 0, 0, 0.171);
 $background-color_3: rgb(123, 155, 76);
 
-@mixin titulos {
-    h1{
-        font-size: ;
-        color: ;
-    }
-    h2 {
+// @mixin titulos {
+//     h1{
+//         font-size: ;
+//         color: ;
+//     }
+//     h2 {
 
-    }
-    h3 {
+//     }
+//     h3 {
 
-    }
-}
+//     }
+// }
 
 /* Reset de estilo. */
 * {
@@ -76,7 +76,7 @@ header {
 	}
 }
 //Items de texto en presentacion
-ul {
+.parrafoDos {
     li {
         width: 100%;
         font-size: 1.2rem;
