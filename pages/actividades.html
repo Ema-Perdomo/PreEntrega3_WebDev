@@ -4,58 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividades</title>
+    <!-- ----------------Link Boostrap--------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- ----------------Link Css--------------------- -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">NOSOTROS</a></li>
-                <li><a href="./historial.html">HISTORIAL</a></li>
-                <li><a href="./actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./publicaciones.html">PUBLICACIONES</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-                <!-- Logo panda clikeable -->
-                <li><a href="../index.html"><img class="logoHeader" src="../assets/img/PandaLOGO.png"></a></li>
-            </ul>
-        </nav>
+    <!-- Header -->    
+    <header class="sticky-top"> 
+        <!-- CAMBIAR A COLLAPSE PARA MOBILE -->
+        <div class="d-lg-none d-xl-none">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="navbar-brand logoHeader" src="../assets/img/PandaLOGO.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../index.html">NOSOTROS</a>
+                            <a class="nav-link" href="./historial.html">HISTORIAL</a>
+                            <a class="nav-link" href="./actividades.html">ACTIVIDADES</a>
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            <a class="nav-link" href=".publicaciones.html">PUBLICACIONES</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Desktop -->
+        <div class="d-none d-lg-block">
+            <nav class="navbar navbar-expand">
+                <div class="container-fluid">                    
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <a class="navbar-brand" href="../index.html"><img class="navbar-brand logoHeader" src="../assets/img/PandaLOGO.png"></a>
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../index.html">NOSOTROS</a>
+                            <a class="nav-link" href="./historial.html">HISTORIAL</a>
+                            <a class="nav-link" href="./actividades.html">ACTIVIDADES</a>
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            <a class="nav-link" href="./publicaciones.html">PUBLICACIONES</a>
+                            <a ></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-
+    
     <main>
         <div>
             <h1>Actividades</h1>
             <h2 class="subtituloCentral">Limpieza de Costas 2022</h2>
         </div>
-        <div class="video">            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wRTtK1yr8QQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-                <br>
-        </div>
-        <div class="galeria">
-            <h2 class="subtituloCentral">Limpieza de Costas 2021</h2>
-            <div id="grillaImagenes">
-                <img id="img1" src="../assets/img/Limpieza2021_1.jpg" class="imagenChica" alt="Personas recolectando residuos">
-                <img id="img2" src="../assets/img/Limpieza2021_2.jpg" class="imagenChica" alt="Personas recolectando residuos">
-                <img id="img3" src="../assets/img/Limpieza2021_3.jpg" class="imagenChica" alt="Personas recolectando residuos">
-                <img id="imagenGrande" src="../assets/img/Limpieza2021_4.jpg" class="imgGrande" alt="Personas recolectando residuos">
-            </div> 
-        </div>     
-        
-        
-        <div class="galeria">
-            <h2 class="subtituloCentral">Limpieza de Costas 2020</h2>            
-            <div id="grillaImagenes">
-                <img id="img1" src="../assets/img/Limpieza2020_1.jpg" class="imagenChica" alt="Personas recolectando residuos">
-                <img id="img2" src="../assets/img/Limpieza2020_2.jpg" class="imagenChica" alt="Personas recolectando residuos">
-                <img id="img3" src="../assets/img/Limpieza2020_3.jpg" class="imagenChica" alt="Personas recolectando residuos">
-                <img id="imagenGrande" src="../assets/img/Limpieza2020_4.jpg" class="imgGrande" alt="Personas recolectando residuos">
+
+        <!-- Video  -->
+        <div class="container">
+            <div class="d-flex justify-content-center mx-auto">
+                <div class="ratio ratio-16x9" style="max-width:1000px;">
+                        <iframe src="https://www.youtube.com/embed/wRTtK1yr8QQ"
+                        allowfullscreen></iframe>
+                </div>
             </div>
-        </div>    
+        </div>
+        
+
+        <!-- Galerias -->
+        <div class="container" style="max-width: 1000px;">
+            <h2 class="subtituloCentral">Limpieza de Costas 2021</h2>
+            <div class="row gy-4">
+                <div class="col-12 col-md-4">
+                    <img id="img1" src="../assets/img/Limpieza2021_1.jpg" class="imagenChica" alt="Personas recolectando residuos">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img id="img2" src="../assets/img/Limpieza2021_2.jpg" class="imagenChica" alt="Personas recolectando residuos">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img id="img3" src="../assets/img/Limpieza2021_3.jpg" class="imagenChica" alt="Personas recolectando residuos">
+                </div>
+                <div class="col-12">
+                    <img id="imagenGrande" src="../assets/img/Limpieza2021_4.jpg" class="imgGrande" alt="Personas recolectando residuos">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 1000px;">
+            <h2 class="subtituloCentral">Limpieza de Costas 2020</h2>
+            <div class="row gy-4 grillaImagenes">
+                <div class="col-12 col-md-4">
+                    <img id="img1" src="../assets/img/Limpieza2020_1.jpg" class="imagenChica" alt="Personas recolectando residuos">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img id="img2" src="../assets/img/Limpieza2020_2.jpg" class="imagenChica" alt="Personas recolectando residuos">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img id="img3" src="../assets/img/Limpieza2020_3.jpg" class="imagenChica" alt="Personas recolectando residuos">
+                </div>
+                <div class="col-12">
+                    <img id="imagenGrande" src="../assets/img/Limpieza2020_4.jpg" class="imgGrande" alt="Personas recolectando residuos">
+                </div>
+            </div>
+        </div>      
+        <br>         
     </main>
 
     <footer>

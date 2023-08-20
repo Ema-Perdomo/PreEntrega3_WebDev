@@ -3,79 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>publicaciones</title>
+    <!-- ----------------Link Boostrap--------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- ----------------Link Css--------------------- -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">NOSOTROS</a></li>
-                <li><a href="./historial.html">HISTORIAL</a></li>
-                <li><a href="./actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./publicaciones.html">PUBLICACIONES</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-                <!-- Logo panda clikeable -->
-                <li><a href="../index.html"><img class="logoHeader" src="../assets/img/PandaLOGO.png"></a></li>
-            </ul>
-        </nav>
+    <!-- Header -->    
+    <header class="sticky-top"> 
+        <!-- CAMBIAR A COLLAPSE PARA MOBILE -->
+        <div class="d-lg-none d-xl-none">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="navbar-brand logoHeader" src="../assets/img/PandaLOGO.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../index.html">NOSOTROS</a>
+                            <a class="nav-link" href="./historial.html">HISTORIAL</a>
+                            <a class="nav-link" href="./actividades.html">ACTIVIDADES</a>
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            <a class="nav-link" href="./publicaciones.html">PUBLICACIONES</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Desktop -->
+        <div class="d-none d-lg-block">
+            <nav class="navbar navbar-expand">
+                <div class="container-fluid">                    
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <a class="navbar-brand" href="../index.html"><img class="navbar-brand logoHeader" src="../assets/img/PandaLOGO.png"></a>
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../index.html">NOSOTROS</a>
+                            <a class="nav-link" href="./historial.html">HISTORIAL</a>
+                            <a class="nav-link" href="./actividades.html">ACTIVIDADES</a>
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            <a class="nav-link" href="./publicaciones.html">PUBLICACIONES</a>
+                            <a ></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>PUBLICACICONES</h1>
-        <div>
-            <div>
-                <h3>Lorem ipsum dolor!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam 
-                    architecto voluptatibus optio ducimus accusantium necessitatibus
-                    consequatur sint omnis soluta debitis asperiores, consequuntur voluptas 
-                    atque illum vel blanditiis itaque qui!Lorem</p>
-            </div>
-            <img src="../assets/img/Libro1.png" alt="Portada del libro: Mision posible, un mundo de desechos">
+        <div class="container">
+            <h1>PUBLICACIONES:</h1>
+            <br>
         </div>
-        <div>
-            <div>
-                <h3>Lorem ipsum dolor!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam 
-                    architecto voluptatibus optio ducimus accusantium necessitatibus
-                    consequatur sint omnis soluta debitis asperiores, consequuntur voluptas 
-                    atque illum vel blanditiis itaque qui!Lorem</p>
+        
+        <!-- Cards de publicaciones -->
+        <!-- Libro MISION -->  
+        <div class="container">
+            <div class="card rounded-4 mb-3" style="max-width:1400px;">
+                <div class="row g-0">              
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">UN MUNDO HECHO DE DESECHOS, Misión posible</h5>
+                            <p class="card-text">
+                                Esta obra está enfocada al tema “Residuos”, donde a través del  conocimiento científico y la experiencia de las poblaciones se pretenden volcar en la resolución de los problemas socio-ambientales de la comunidad, promoviendo el compromiso y la participación de la comunidad, como mecanismos fundamentales para el cambio.
+
+                            Considera la estrecha interconexión que tiene el tema de los residuos con las diferentes realidades sociales, culturales y económicas de los estamentos que conforman una comunidad y promueve a una participación ciudadana responsable.
+                            Temas: Historia – Residuos  — Significados – Consumo –  Desechos Tóxicos – Reciclado –- Vertederos – Propuestas.
+                            
+                            </p>
+                            <p class="card-text"><small class="text-muted">Autor: Hernán Sorhuet</small></p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center col-md-4">
+                        <img src="../assets/img/Libro1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
             </div>
-            <img src="../assets/img/Libro2.png" alt="Portada del libro: Mision posible, un mundo de desechos">
-        </div>
-        <div>
-            <div>
-                <h3>Lorem ipsum dolor!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam 
-                    architecto voluptatibus optio ducimus accusantium necessitatibus
-                    consequatur sint omnis soluta debitis asperiores, consequuntur voluptas 
-                    atque illum vel blanditiis itaque qui!Lorem</p>
+        </div>     
+        
+        <!--  Libro DESAFIO -->
+        <div class="container">
+            <div class="card rounded-4 mb-3" style="max-width:1400px;">
+                <div class="row g-0">              
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">EL DESAFÍO DE LOS RESIDUOS – PROYECTO COLONIA</h5>
+                            <p class="card-text">Sobre la base de Un Mundo hecho de desechos se elaboró esta obra contemplando la realidad local. Editada especialmente para la Intendencia de Colonia pretende colaborar con el sistema educativo participando a la sociedad a entender el mundo del reciclado, sus beneficios y aplicaciones para que cuando la Intendencia implemente programas de separación de residuos domiciliarios, la población lo reciba con cierto grado de conocimiento. Sin educación primaria es imposible modificar hábitos y costumbres culturales, siendo el conocimiento la única vía posible para lograr el cambio.
+                                32 Páginas pensadas para replicar en otros Departamentos incorporando el Programa de Multiplicadores Ambientales sugerido por Panda Educación Ambiental.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center col-md-4">
+                        <img src="../assets/img/Libro5.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
             </div>
-            <img src="../assets/img/Libro3.png" alt="Portada del libro: Mision posible, un mundo de desechos">
         </div>
-        <div>
-            <div>
-                <h3>Lorem ipsum dolor!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam 
-                    architecto voluptatibus optio ducimus accusantium necessitatibus
-                    consequatur sint omnis soluta debitis asperiores, consequuntur voluptas 
-                    atque illum vel blanditiis itaque qui!Lorem</p>
-            </div>
-            <img src="../assets/img/Libro4.png" alt="Portada del libro: Mision posible, un mundo de desechos">
-        </div>
-        <div>
-            <div>
-                <h3>Lorem ipsum dolor!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam 
-                    architecto voluptatibus optio ducimus accusantium necessitatibus
-                    consequatur sint omnis soluta debitis asperiores, consequuntur voluptas 
-                    atque illum vel blanditiis itaque qui!Lorem</p>
-            </div>
-            <img src="../assets/img/Libro5.png" alt="Portada del libro: Mision posible, un mundo de desechos">
-        </div>
-    </main>
-    
+        
+        <!-- Libro GEOPARQUE -->      
+        <div class="container">
+            <div class="card rounded-4 mb-3" style="max-width:1400px;">
+                <div class="row g-0">              
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">GEOPARQUE GRUTAS DEL PALACIO – INTENDENCIA DE FLORES</h2>
+                            <h3 class="card-subtitle"> JUNIO 2013</h3>
+                            <p class="card-text">
+                                Edición especial en oportunidad de la nominación por parte de la UNESCO del Primer Geoparque del Uruguay establecido en el Departamento de Flores. 
+                                Destacando los diversos Geositios que dicho Geoparque contiene se hace un relevamiento de cada uno de ellos.
+                                32 Pág. Autor Hernán Sorhuet y equipo dirigido por Adrián Giraudo. Helga Chulepín, Kimal Amir, Cesar Goso, Diego Irazábal , Denise Gorfinkield, José de León Bueno y Nancy González. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center col-md-4">
+                        <img src="../assets/img/Libro2.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>       
+        </div>     
+        <br>        
+    </main> 
+
     <footer>
         <ul>
             <!--Cambio los logos del header para que queden las redes en el footer-->

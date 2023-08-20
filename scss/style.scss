@@ -1,0 +1,161 @@
+/*Variables*/
+@import "variables";
+$color_1: black;
+$color_2: rgba(255, 255, 255, 0.808);
+$color_3: rgb(202, 201, 201);
+$font-family_1: Arial, Helvetica, sans-serif;
+$background-color_1: rgb(150, 175, 112);
+$background-color_2: rgba(0, 0, 0, 0.171);
+$background-color_3: rgb(123, 155, 76);
+
+@mixin titulos {
+    h1{
+        font-size: ;
+        color: ;
+    }
+    h2 {
+
+    }
+    h3 {
+
+    }
+}
+
+/* Reset de estilo. */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	overflow-x: hidden;
+}
+/* Body */
+main {
+	background-color: $background-color_1;
+}
+/* Titulos */
+h1 {
+	text-emphasis: bold;
+	font-size: 2rem;
+}
+.card {
+	background-color: $background-color_2;
+}
+header {
+	background-color: $background-color_3;
+	border-bottom: solid 2px black;
+	width: 100vw;
+	a {
+		font: 1.5em Helvetica;
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+.logoHeader {
+	height: 6rem;
+	width: 6rem;
+}
+.presentacion {
+	width: 100vw;
+	height: 100%;
+	padding: 1rem;
+	background-image: url("../assets/img/pandaFotonegra.png");
+	background-size: cover;
+	background-attachment: fixed;
+	h1 {
+		color: $color_2;
+	}
+	p {
+		width: 100%;
+		font-size: 1.2rem;
+		color: $color_3;        
+	}
+}
+//Items de texto en presentacion
+ul {
+    li {
+        width: 100%;
+        font-size: 1.2rem;
+        color: $color_3;
+    }
+}
+
+.ministerio-img {
+	width: 50%;
+}
+/* Galeria de imagenes */
+.subtituloCentral {
+	text-align: center;
+}
+.imgGrande {
+	grid-column: 1/4;
+	grid-row: 2;
+	width: 100%;
+}
+.imagenChica {
+	width: 100%;
+	height: 100%; 
+}
+
+footer {
+	background-color: $background-color_1;
+	border-top: solid 2px black;
+	width: 100vw;
+	bottom: 0rem;
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		li {
+			list-style-type: none;
+		}
+	}
+}
+.logo {
+	width: 50px;
+	height: 50px;
+	margin: .625rem;
+}
+
+@media (max-width: 768px) {
+
+}
+@media screen and (max-width: 768px) {
+	.presentacion {
+		p {
+			width: 100%;
+			font-size: 0.95em;
+			color: $color_3;
+		}
+	}
+    /* Texto tablet */
+    .parrafoDos {
+        li {
+            font-size: 0.95em;  
+        }
+        
+    }
+}
+@media screen and (max-width: 425px) {
+	.presentacion {
+		margin-bottom: 1rem;
+		padding: 1rem;
+		h1 {
+			font-size: 1rem;
+		}
+		p {
+			color: $color_3;
+			font-size: 0.9em;
+		}
+	}
+    /* Texto mobile */
+	.parrafoDos {
+		display: none;
+	}
+}
